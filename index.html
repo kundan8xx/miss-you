@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Envelope + Letter (Open/Close on Click)</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="envelope-wrapper">
+            <div class="envelope">
+                <div class="letter">
+                    <div class="text">
+                        <strong>Dear Chhota bachchaa</strong>
+                        <p>
+                            wifeey miss you & love you forever pta nahi me hi miss kr rha hu ya aap bhi sach kahu to esa lgta he aap muje chhod ke jaa chuke ho , wifeey me akela pd gya hu, tabiyat bhi bahut zyaada khraab rehti he, aapki bahut zaroorat he hme plz wapis aa jao. ok meri hi glti thi bs dekho accept bhi kr liya ab to aa jao itna to mt hurt kro apne baby ko . plz na bhaggu me mar jaunga agr aap nhi mile to, lot aao bhaggu.... love you forever wifeey                       </p>
+                    </div>
+                </div>
+            </div>
+            <div class="heart"></div>
+        </div>
+    </div>
+    <script>
+        const envelope = document.querySelector('.envelope-wrapper');
+        envelope.addEventListener('click', () => {
+            envelope.classList.toggle('flap');
+        });
+    </script>
+</body>
+</html>
